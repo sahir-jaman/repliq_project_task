@@ -33,7 +33,7 @@ class Employee(models.Model):
     def __str__(self):
         return "name= " + self.name + ". Company id=" + str(self.company.company_id)
 
-
+# Employee-Products Model
 class EmployeeProducts(models.Model):
     CONDITION = (('New', 'New'), ('Old', 'Old'), ('Bad', 'Bad'), ('Damaged', 'Damaged'))
     products = (('Phones', 'Phones'), ('Tablets', 'Tablets'), ('Laptops', 'Laptops'), ('Others', 'others'))
