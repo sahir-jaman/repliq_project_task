@@ -4,6 +4,7 @@ from rest_framework import routers
 
 from .views import CompanyViewSet, EmployeeViewSet, EmployeeProductViewSet
 
+# Routing
 router = routers.DefaultRouter()
 router.register(r'companies', CompanyViewSet)
 router.register(r'employees', EmployeeViewSet)
