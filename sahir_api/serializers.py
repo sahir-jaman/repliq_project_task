@@ -2,7 +2,7 @@ from rest_framework import serializers
 from sahir_api.models import Company, Employee, EmployeeProducts
 
 
-# serializer class written here
+# serializer class for Company written here
 class CompanySerializer(serializers.HyperlinkedModelSerializer):
     company_id = serializers.ReadOnlyField()
 
@@ -10,7 +10,7 @@ class CompanySerializer(serializers.HyperlinkedModelSerializer):
         model = Company
         fields = '__all__'
 
-
+# serializer class for Employee written here
 class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
     id = serializers.ReadOnlyField()
 
@@ -18,7 +18,7 @@ class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
         model = Employee
         fields = '__all__'
 
-
+# serializer class for Employee-Products written here
 class EmployeeProductSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
